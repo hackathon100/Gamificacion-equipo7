@@ -19,21 +19,16 @@ const Results = ({history}) => {
     return (
         <div className="container">
                 <div className="row justify-content-center">
-                    <h1>Felicidades ganaste la ronda 1, prepárate para las 2 rondas restantes.</h1>
-                    <h1>¡Esa no era la respuesta correcta!, aún quedan 2 rondas más.</h1>
-                    <h1>¡Empate!, ¡cada uno gana un punto!</h1>
-                    <h1>Felicitaciones, ¡has ganado!</h1>
-                    <h1>¡Has perdido!, ¡pero la próxima será la vencida!</h1>
-                    <h1>¡Han empatado!, vuelvan a jugar para sumar puntos</h1>
-                    <p>Sigue jugando para subir en el ranking de puntos</p>
+                    <h1>¡Empate!, ¡ha sido una partida muy reñida!</h1>
+                    <p>¡!</p>
                 </div>
                 <div className="row justify-content-center">
-                    <p>La ronda 2 comienza en: {timeToWait}</p>
+                    <p>Volverás al menú en: {timeToWait}</p>
                 </div>
                 <div className="row justify-content-center text-center">
                     <div className="col-sm-6">
                         <p>Jugador 1</p>
-                        <h4>1</h4>
+                        <h4>0</h4>
                     </div>
                     <div className="col-sm-6">
                         <p>Jugador 2</p>

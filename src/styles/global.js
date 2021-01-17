@@ -231,4 +231,15 @@ export default createGlobalStyle`
             font-weight: 900; 
         }
     }
+    .btn__home{
+        background-color: transparent;
+        border:0;
+        outline:0;
+    }
+    .btn__home:focus{
+        outline:0;
+    }
+    nav{
+        background-color: transparent !important;
+    }
 `

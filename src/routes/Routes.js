@@ -11,6 +11,10 @@ import JoinRoom from '../pages/JoinRoom';
 import Results from '../pages/Results';
 import WaitingRoom from '../pages/WaitingRoom';
 import Question from '../pages/Question';
+import ResultPlayer1Lose from '../pages/ResultPlayer1Lose';
+import ResultPlayer2Lose from '../pages/ResultPlayer2Lose';
+import ResultPlayer2Win from '../pages/ResultPlayer2Win';
+import ResultPlayer1Win from '../pages/ResultPlayer1Win';
 import injectContext, { Context } from '../context/appContext';
 import { signInWithGoogle, signOutWithGoogle, successGoogle } from '../firebase/firebase';
 import { useContext, useEffect, useState } from 'react';
@@ -38,17 +42,21 @@ const Routes = () => {
                 isSignedIn ? (
                     <>
                         <Navbar logout={logout} />
-                        <main className="mt-3">
+                        <main>
                             <Switch>
                                 <Route exact path="/" component={Home} />
                                 <Route exact path="/v1/createroom/:gamesNumber" component={CreateRoom} />
                                 <Route exact path="/v1/waitingroom/:numberRoom" component={WaitingRoom} />
                                 <Route exact path="/v1/joinroom" component={JoinRoom} />
-                                <Route exact path="/v1/cachipun" component={Cachipun} />
+                                <Route exact path="/v1/cachipun/:numberRoom" component={Cachipun} />
                                 <Route exact path="/v1/cards/:gamesNumber" component={Cards} />
                                 <Route exact path="/v1/results" component={Results} />
                                 <Route exact path="/v1/historyresults" component={HistoryResults} />
-                                <Route exact path="/v1/question" component={Question} />
+                                <Route exact path="/v1/question/:winner" component={Question} />
+                                <Route exact path="/v1/player1lose" component={ResultPlayer1Lose} />
+                                <Route exact path="/v1/player1win" component={ResultPlayer1Win} />
+                                <Route exact path="/v1/player2lose" component={ResultPlayer2Lose} />
+                                <Route exact path="/v1/player2win" component={ResultPlayer2Win} />
                                 <Route component={NotFound} />
                             </Switch>
                         </main>
@@ -60,6 +68,9 @@ const Routes = () => {
                                 <Route exact path="/" component={() => {
                                     return (
                                         <div className="container">
+                                            <div className="row justify-content-center">
+                                                <img src="https://drive.google.com/uc?id=13ADzLZRx23Xwp9oXl9AxuthFYaqhAny3" alt="Not Found" width="150"/>
+                                            </div>
                                             <div className="row justify-content-center">
                                                 <h3>Ingreso</h3>
                                             </div>

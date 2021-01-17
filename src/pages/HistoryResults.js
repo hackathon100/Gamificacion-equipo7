@@ -57,18 +57,18 @@ const HistoryResults = ({history}) => {
                         <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>Pepito Ramirez</td>
-                                <td>20</td>
+                                <td>sacm1046</td>
+                                <td>10</td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
-                                <td>Juan Juarez</td>
-                                <td>18</td>
+                                <td>Martín Antúnez</td>
+                                <td>5</td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td>JK</td>
-                                <td>15</td>
+                                <td>Juan Pablo</td>
+                                <td>5</td>
                             </tr>
                         </tbody>
                     </table>

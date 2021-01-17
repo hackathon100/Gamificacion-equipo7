@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from '../../icons/GoogleIcon';
 import { StyledButton } from './style';
 
 const GoogleButton = ({ text, onClick }) => {

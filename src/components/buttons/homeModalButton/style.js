@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
-export const StyledButtom = styled.button`
-    & > span:first-child{
-        margin-right: 5px;
-    }
+export const StyledSpan = styled.span`
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
 `

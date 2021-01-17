@@ -8,7 +8,7 @@ const FrontCard = ({ title, idImg, type, medal, imgType, body }) => {
                     <div className="frame-header">
                         <h5 className="name">{title}</h5>
                     </div>
-                    <img className="frame-art width: 100%" src={`https://drive.google.com/uc?id=${idImg}`} alt="nissa art" />
+                    <img className="frame-art width: 100%" src={`https://drive.google.com/uc?id=${idImg}`} alt="img" />
                     <div className="frame-type-line">
                         <div className="container">
                             <div className="row justify-content-center text-center">

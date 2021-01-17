@@ -1,6 +1,10 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom';
 
-const BackCard = ({ question, answer1, answer2, answer3 }) => {
+const BackCard = ({ question, answer1, answer2, answer3}) => {
+
+    const history = useHistory()
+
     return (
         <div className="card-container">
             <div className="card-background">
@@ -15,7 +19,7 @@ const BackCard = ({ question, answer1, answer2, answer3 }) => {
                             </div>
                             <div className="row justify-content-center text-center text-justify">
                                 <ul class="list-group">
-                                    <button type="button" class="list-group-item list-group-item-action">{answer1}</button>
+                                    <button type="button" onClick={() => history.push('/v1/player2win')} class="list-group-item list-group-item-action">{answer1}</button>
                                     <button type="button" class="list-group-item list-group-item-action">{answer2}</button>
                                     <button type="button" class="list-group-item list-group-item-action">{answer3}</button>
                                 </ul>

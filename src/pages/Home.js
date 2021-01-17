@@ -15,15 +15,15 @@ const Home = ({ history }) => {
     const { store } = useContext(Context)
 
 
-  /*   const upload = () => {
-        cards.forEach(async (card) => {
-            await db.collection('cards').doc().set(card)
-        })
-    } */
+    /*   const upload = () => {
+          cards.forEach(async (card) => {
+              await db.collection('cards').doc().set(card)
+          })
+      } */
 
     return (
-        <>
-            <div className="container">
+        <div className="bg-danger">
+            <div className="container py-5 text-white">
                 {/* <button onClick={upload}>upload</button> */}
                 {/*  <img src="https://drive.google.com/uc?id=1-9UVX6nOSDaOmreRavLq4T7EdV9ClJOX" alt="asd"/> */}
 
@@ -31,44 +31,52 @@ const Home = ({ history }) => {
                     <h1>Bienvenido {store.currentUser.name}</h1>
                 </div>
                 <div className="row justify-content-center text-center">
-                    <div className="col-sm-6">
+                    <div className="col-4">
+                        {/*15zsesSpRJLlh_sV8f-y5eAbyyXq2NS73*/}
                         <Button
-                            icon={<PlusIcon size={20} />}
+                            
                             dataToggle="modal"
                             dataTarget="#homeModal"
-                            text=" Crear sala"
+                            
+                            height={70}
+                            width={70}
+                            className="btn__home"
+                            bgImage='https://drive.google.com/uc?id=15zsesSpRJLlh_sV8f-y5eAbyyXq2NS73'
                         />
                     </div>
-                    <div className="col-sm-6">
+                    <div className="col-4">
                         <Button
-                            icon={<WorldIcon size={20} />}
-                            text=" Unirte a una sala"
+                            
                             onClick={() => history.push('/v1/joinroom')}
+                            height={70}
+                            width={70}
+                            className="btn__home"
+                            bgImage='https://drive.google.com/uc?id=1LbVL_alDzwBPDDXBx3jEkUHOqwWd7gK7'
                         />
                     </div>
-                </div>
-                <div className="row justify-content-center text-center">
-                    <div className="col-sm-6">
+                    <div className="col-4">
                         <Button
-                            icon={<TrophyIcon size={20} />}
-                            text=" RANKING"
+                            
                             onClick={() => history.push('/v1/historyresults')}
+                               height={70}
+                            width={70}
+                            className="btn__home"
+                            bgImage='https://drive.google.com/uc?id=1S-hx1WPYxj7ZdL6SaKOhSPBNHKDERuZz'
                         />
                     </div>
                 </div>
-
             </div>
 
             <Modal id="homeModal">
                 <div className="row justify-content-around text-center">
                     <HomeModalButton text="1" />
-                    <HomeModalButton text="3" />
+                    {/*  <HomeModalButton text="3" />
                     <HomeModalButton text="5" />
-                    <HomeModalButton text="7" />
+                    <HomeModalButton text="7" /> */}
                 </div>
             </Modal>
 
-        </>
+        </div>
     )
 }
 
