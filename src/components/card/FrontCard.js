@@ -2,32 +2,32 @@ import React from 'react'
 
 const FrontCard = ({ title, idImg, type, medal, imgType, body }) => {
     return (
-        <div class="card-container">
-            <div class="card-background">
-                <div class="card-frame">
-                    <div class="frame-header">
-                        <h5 class="name">{title}</h5>
+        <div className="card-container">
+            <div className="card-background">
+                <div className="card-frame">
+                    <div className="frame-header">
+                        <h5 className="name">{title}</h5>
                     </div>
-                    <img class="frame-art width: 100%" src={`https://drive.google.com/uc?id=${idImg}`} alt="nissa art" />
-                    <div class="frame-type-line">
+                    <img className="frame-art width: 100%" src={`https://drive.google.com/uc?id=${idImg}`} alt="nissa art" />
+                    <div className="frame-type-line">
                         <div className="container">
                             <div className="row justify-content-center text-center">
-                                <div class="col-sm-6">
-                                    <img src={`https://drive.google.com/uc?id=${imgType}`} id="mana-icon" />
+                                <div className="col-sm-6">
+                                    <img src={`https://drive.google.com/uc?id=${imgType}`} id="mana-icon" alt="NotFound" />
                                     <p>{type}</p>
                                 </div>
-                                <div class="col-sm-6">
-                                    <img src={`https://drive.google.com/uc?id=1XPwppdKawuOTVWdK5gqsBGwUvnHu7U2o`} id="mana-icon" />
+                                <div className="col-sm-6">
+                                    <img src={`https://drive.google.com/uc?id=1XPwppdKawuOTVWdK5gqsBGwUvnHu7U2o`} id="mana-icon" alt="NotFound" />
                                     <p>X {medal}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="frame-text-box">
-                        <p class="description ftb-inner-margin h6">{body}</p>
+                    <div className="frame-text-box">
+                        <p className="description ftb-inner-margin h6">{body}</p>
                     </div>
-                    <div class="frame-bottom-info inner-margin">
-                        <div class="fbi-center"></div>
+                    <div className="frame-bottom-info inner-margin">
+                        <div className="fbi-center"></div>
                     </div>
                 </div>
             </div>

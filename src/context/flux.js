@@ -1,11 +1,14 @@
 const getState = ({ getStore, getActions, setStore }) => {
     return {
         store: {
-            currentUser: {}
+            currentUser: {
+                name: 'sacm1046',
+                email: 'sacm1046@gmail.com',
+                scores: 0
+            }
         },
         actions: {
             login: user => {
-                console.log(user)
                 const { displayName, email } = user;
                 setStore({
                     currentUser: {
@@ -15,10 +18,11 @@ const getState = ({ getStore, getActions, setStore }) => {
                     }
                 })
             },
-            logout: () => {
+            logout: history => {
                 setStore({
                     currentUser: {}
                 })
+                history.push('/')
             }
         }
     }

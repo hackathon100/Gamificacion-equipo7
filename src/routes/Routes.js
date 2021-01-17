@@ -18,11 +18,17 @@ import { useContext, useEffect, useState } from 'react';
 const Routes = () => {
 
     const { actions } = useContext(Context);
+    const [isSignedIn, setIsSignedIn] = useState(false);
 
-    const [isSignedIn, setIsSignedIn] = useState(false)
+
+    const logout = () => {
+        setIsSignedIn(false)
+        signOutWithGoogle()
+    }
+
 
     useEffect(() => {
-        successGoogle(actions.login, actions.logout, setIsSignedIn)
+        successGoogle(actions.login, setIsSignedIn)
     }, [actions])
 
     return (
@@ -30,15 +36,15 @@ const Routes = () => {
             {
                 isSignedIn ? (
                     <>
-                        <Navbar logout={signOutWithGoogle} />
+                        <Navbar logout={logout} />
                         <main className="mt-3">
                             <Switch>
                                 <Route exact path="/" component={Home} />
-                                <Route exact path="/v1/createroom/:numberRoom" component={CreateRoom} />
+                                <Route exact path="/v1/createroom/:gamesNumber" component={CreateRoom} />
                                 <Route exact path="/v1/waitingroom/:numberRoom" component={WaitingRoom} />
                                 <Route exact path="/v1/joinroom" component={JoinRoom} />
                                 <Route exact path="/v1/cachipun" component={Cachipun} />
-                                <Route exact path="/v1/cards/:codeRoom" component={Cards} />
+                                <Route exact path="/v1/cards/:gamesNumber" component={Cards} />
                                 <Route exact path="/v1/results" component={Results} />
                                 <Route exact path="/v1/historyresults" component={HistoryResults} />
                                 <Route exact path="/v1/question" component={Question} />
@@ -48,16 +54,26 @@ const Routes = () => {
                         <Footer />
                     </>
                 ) : (
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <h3 style={{ textAlign: "center", marginTop: "50px" }}>Ingreso</h3>
-                            </div>
-                            <div className="row justify-content-center">
-                                <button onClick={signInWithGoogle} className="btn btn-danger">
-                                    sign in google
+
+                        <Switch>
+                            <Route exact path="/" component={() => {
+                                return (
+                                    <div className="container">
+                                        <div className="row justify-content-center">
+                                            <h3 style={{ textAlign: "center", marginTop: "50px" }}>Ingreso</h3>
+                                        </div>
+                                        <div className="row justify-content-center">
+                                            <button onClick={signInWithGoogle} className="btn btn-danger">
+                                                sign in google
                                     </button>
-                            </div>
-                        </div>
+                                        </div>
+                                    </div>
+                                )
+                            }} />
+
+                            <Route component={NotFound} />
+                        </Switch>
+
                     )
             }
         </Router>

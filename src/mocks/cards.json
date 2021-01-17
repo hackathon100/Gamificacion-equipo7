@@ -1,0 +1,450 @@
+[
+    {
+       "front":{
+          "title":"Malón",
+          "text":"Eran ataques realizados por los mapuches a los españoles con la finalidad de robar caballos, mujeres, armas y alimentos",
+          "cachipum":"piedra",
+          "medal":1,
+          "imageId":"1NwT0bq2eGItYLMZ8T7LD3N2eA-LItOEE"
+       },
+       "back":{
+          "question":{
+             "text":"¿Qué busca obtener los mapuches con estos ataques?",
+             "answers":[
+                {
+                   "text":"Robar caballos, mujeres, armas y alimentos",
+                   "type":true
+                },
+                {
+                   "text":"Cansar a los soldados españoles",
+                   "type":false
+                },
+                {
+                   "text":"Solo armamentos",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"Encomienda",
+          "text":"Sistema de trabajo indigena, donde un español obtenia un grupo de indigenas para realizar trabajos, el español a cambio les daba comida, ropa y techo",
+          "cachipum":"papel",
+          "medal":2,
+          "imageId":"18WU5KqCf6nHAZmsmevy1qskm3RxHxJCC"
+       },
+       "back":{
+          "question":{
+             "text":"¿Qué requisito debia cumplir el español que recibia la encomienda?",
+             "answers":[
+                {
+                   "text":"Debia darle a los indigenas ropa, comida y techo",
+                   "type":true
+                },
+                {
+                   "text":"Nada podia explotarlos libremente",
+                   "type":false
+                },
+                {
+                   "text":"Debia pagarles un sueldo, darles comida, ropa y hogar",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"Mestizaje",
+          "text":"Proceso mediante el cual españoles, indigenas y negros se mezclaron, dando origen a nuevos grupos raciales (mestizos, zambos y mulatos)",
+          "cachipum":"tijera",
+          "medal":3,
+          "imageId":"1ewOVypw29MFRbR2Ec_b1isl5GeMfVZLx"
+       },
+       "back":{
+          "question":{
+             "text":"¿Cómo se llamó el grupo racial producto de la mezcla entre españoles e indigenas?",
+             "answers":[
+                {
+                   "text":"Se llamaban Mestizos",
+                   "type":true
+                },
+                {
+                   "text":"Eran los Zambos",
+                   "type":false
+                },
+                {
+                   "text":"Se les denomina Mulatos",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"Peones",
+          "text":"Eran trabajadores de las haciendas coloniales, trabajaban por temporadas y de manera esporádica (generalmente en distintos campos)",
+          "cachipum":"piedra",
+          "medal":1,
+          "imageId":"1Oy4FlR0V5CULrAtfjQEXnj26U8VIyU_G"
+       },
+       "back":{
+          "question":{
+             "text":"¿A que tipo de trabajadores de la actualidad se parecen los peones?",
+             "answers":[
+                {
+                   "text":"Se parecen a los temporeros",
+                   "type":true
+                },
+                {
+                   "text":"Son similares a los trabajadores de retail",
+                   "type":false
+                },
+                {
+                   "text":"Son como los vendedores de una feria",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"Monopolio Comercial",
+          "text":"Sistema económico implementado por España en América, con la finalidad de evitar la fuga de oro y asi financiar su guerra con Inglaterra",
+          "cachipum":"papel",
+          "medal":2,
+          "imageId":"1LeTTD_HP1u1dgOUzcqusRgWAJv40A6ub"
+       },
+       "back":{
+          "question":{
+             "text":"¿En que consistia el monopolio comercial?",
+             "answers":[
+                {
+                   "text":"Consistía en que las colonias españolas en america solo podian comerciar con España",
+                   "type":true
+                },
+                {
+                   "text":"Permitía a las colonias americanas fijar los precios de sus productos",
+                   "type":false
+                },
+                {
+                   "text":"Impedia a los españoles importar productos extranjeros",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"Guerra de Arauco",
+          "text":"Conflicto entre españoles y mapuches que inicia tras el desastre de curalaba, se extendió aproximadamente por 300 años y se divide en varias etapas como la guerra defensiva, ofensiva y parlamentos",
+          "cachipum":"tijera",
+          "medal":3,
+          "imageId":"1LfSgeQ1QhNWPasj5nWlsVZQ8bNs4RfGn"
+       },
+       "back":{
+          "question":{
+             "text":"¿Cuál es el hecho histórico que marca el inicio de la guerra de Arauco?",
+             "answers":[
+                {
+                   "text":"El desastre de Curalaba",
+                   "type":true
+                },
+                {
+                   "text":"La llegada de Colón a América",
+                   "type":false
+                },
+                {
+                   "text":"Impedia a los españoles importar productos extranjeros",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"Inquilinos",
+          "text":"Eran trabajadores de las haciendas durante la colonia, a diferencia de los peones vivian en el campo donde trabajaban junto a sus familias, estaban a cargo de dirigir el trabajo en el campo, mandaban a los peones y podian cultivar un pequeño trozo de terreno para si mismos",
+          "cachipum":"piedra",
+          "medal":1,
+          "imageId":"1011UKvZQBT-JrtX0RTFXI7a6n3M_TqIk"
+       },
+       "back":{
+          "question":{
+             "text":"¿Los inquilinos recibian algo de parte de sus patrones?",
+             "answers":[
+                {
+                   "text":"Si, recibian generalmente una pequeña choza y tierra para cultivar y vivir junto a su familia",
+                   "type":true
+                },
+                {
+                   "text":"No recibian ningun tipo de pago, ni beneficios",
+                   "type":false
+                },
+                {
+                   "text":"Recibian solo malos tratos e insultos",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"Chinganas",
+          "text":"Correspondian a lugares de esparcimiento (como las ramadas), donde se bebia, se bailaba y generalmente ocurrian peleas. Se ubicaban en las afueras de la ciudad para evitar la fiscalización de las tropas españolas",
+          "cachipum":"papel",
+          "medal":2,
+          "imageId":"1i3FtRXplURaP6I1l7nbJEIKKqiAnzdEQ"
+       },
+       "back":{
+          "question":{
+             "text":"¿Qué clase de personas asistian principalmente a las chinganas?",
+             "answers":[
+                {
+                   "text":"Personas de la clase baja, trabajadores, peones, inquilinos, viajeros, etc.",
+                   "type":true
+                },
+                {
+                   "text":"Solo personas de la alta alcurnia, nobles y hacendados",
+                   "type":false
+                },
+                {
+                   "text":"No se sabe con certeza pues nunca existieron registros de estas fiestas",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"Tertulias",
+          "text":"Se les donimina asi a las fiestas realizadas por familias de la clase alta, en donde los hombres hablaban de política y negocio, los padres de familia aprovechaban estas reuniones para buscarle marido a sus hijas y presentarlar en sociedad, tambien se bailaba, ingerian finas bebidas y jugaban a la escondida (lo más esperado de la jornada)",
+          "cachipum":"tijera",
+          "medal":3,
+          "imageId":"1UXVKnBKRwxFy9YZ62Dlt35_4CRG5zaWG"
+       },
+       "back":{
+          "question":{
+             "text":"¿Quiénes organizaban las tertulias?",
+             "answers":[
+                {
+                   "text":"Las familias mas adineradas de la ciudad",
+                   "type":true
+                },
+                {
+                   "text":"Cualquier persona que tuviera una casa en las afueras de la ciudad",
+                   "type":false
+                },
+                {
+                   "text":"Los españoles hacendados",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"Hacienda colonial",
+          "text":"Era un terreno autosuficiente compuesto por varias hectareas (campo), dedicado a la producción agropecuaria durante la época colonial. En ella trabajaban los inquilinos y los peones. Este lugar contaba con establos, herreria, una gran casa patronal con patios y jardines, incluso tenían una capilla",
+          "cachipum":"piedra",
+          "medal":1,
+          "imageId":"12DTNr9Okaw2GayY71QaSm6GQGOyia1Yp"
+       },
+       "back":{
+          "question":{
+             "text":"¿Cuáles eran las principales actividades realizadas en la hacienda?",
+             "answers":[
+                {
+                   "text":"La agricultura y la ganadería",
+                   "type":true
+                },
+                {
+                   "text":"La caza y la pezca",
+                   "type":false
+                },
+                {
+                   "text":"La sastrería y agricultura",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"Plano damero",
+          "text":"Forma de construcción de asentamientos utilizado por los españoles, era similar a un tablero de ajedrez, partia desde la plaza de armas, alrededor se encontraba la iglesia, los edificios de gobierno y las casas de los ciudadanos mas ilustres",
+          "cachipum":"papel",
+          "medal":2,
+          "imageId":"1JmoXEc6JiIllWsp8O40hmxanY1orpR3G"
+       },
+       "back":{
+          "question":{
+             "text":"¿Qué elementos o edificaciones se encontraban siempre en torno a la plaza de armas?",
+             "answers":[
+                {
+                   "text":"La iglesia, las casas de los ciudadanos más importantes de la ciudad y los edificios de gobierno",
+                   "type":true
+                },
+                {
+                   "text":"Distintas casas, las chinganas y los cuarteles de policia",
+                   "type":false
+                },
+                {
+                   "text":"La municipalidad, los polvorines y la hacienda",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"Misiones",
+          "text":"Eran intervenciones de los misioneros (principalmente jesuitas) en territorio indigena, con la finalidad de vivir con ellos, aprender su cultura y forma de vida, para luego evangelizarlos",
+          "cachipum":"tijera",
+          "medal":3,
+          "imageId":"1qQSCSnlEUeePclJ85nAM7fsmvx6CaLQk"
+       },
+       "back":{
+          "question":{
+             "text":"¿Cuál era la finalidad de las misiones?",
+             "answers":[
+                {
+                   "text":"Aprender la forma de vida de los indigenas y de esa forma poder evangelizarlos",
+                   "type":true
+                },
+                {
+                   "text":"Obtener información sobre como vivian los indigenas para poder atacarlos y bencerlos",
+                   "type":false
+                },
+                {
+                   "text":"Escapar de las ciudades españolas para radicarse junto a los indigenas para formar una resistencia pacífica",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"Órdenes religiosas",
+          "text":"Eran monjes y monjas, sacerdotes, etc. Encargados de la evangelizacion y de la educación en las colonias americanas. Una de las mas importantes en nuestro país fue la orden de los jesuitas",
+          "cachipum":"piedra",
+          "medal":1,
+          "imageId":"16dA0R2y19GpbV4s1bGmOJrswxwC_9Bkw"
+       },
+       "back":{
+          "question":{
+             "text":"¿Con qué otro nombre eran conocidos los jesuitas?",
+             "answers":[
+                {
+                   "text":"Compañía de Jesús",
+                   "type":true
+                },
+                {
+                   "text":"Monjes benedictinos",
+                   "type":false
+                },
+                {
+                   "text":"Gran logia masónica",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"La colonia",
+          "text":"Es el nombre que recibe el periodo de nuestra historia que comprende los hechos ocurridos desde el Desastre de Curalba 1598 hasta la 1810",
+          "cachipum":"papel",
+          "medal":2,
+          "imageId":"1j4VcJ4Dy6r0eQAgWmMXt4MEgMYyJru29"
+       },
+       "back":{
+          "question":{
+             "text":"¿De acuerdo a los datos de inicio y término del período colonial, que hecho marca el fin de este momento?",
+             "answers":[
+                {
+                   "text":"La primera junta nacional de gobierno",
+                   "type":true
+                },
+                {
+                   "text":"La independencia de Chile",
+                   "type":false
+                },
+                {
+                   "text":"La firma de nuestra declaración de independencia",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"Desastre de Curalaba",
+          "text":"Esta fue una importante derrota para el ejercito español a manos de los mapuches en 1598, marcando además el inicio de la Guerra de Arauco. Producto de esta derrota se estableció como limite de las conquistas españolas el río Biobio",
+          "cachipum":"tijera",
+          "medal":3,
+          "imageId":"1oFNLaG_dvgZKac4ggN1YMtcg4ErULfqQ"
+       },
+       "back":{
+          "question":{
+             "text":"¿Cuál fue la principal consecuencia de la Guerra de Arauco?",
+             "answers":[
+                {
+                   "text":"El establecimiento del limite de las conquistas españolas en el río Biobio",
+                   "type":true
+                },
+                {
+                   "text":"Gran cantidad de muertes y bajas en el ejercito español",
+                   "type":false
+                },
+                {
+                   "text":"Daño psicologico irreversible en las filas de los españoles",
+                   "type":false
+                }
+             ]
+          }
+       }
+    },
+    {
+       "front":{
+          "title":"Vida de frontera",
+          "text":"Durante la Guerra de Arauco, españoles y mapuches se reuniona en parlamentos (cercanos a las fronteras de ambos territorios) donde se acordaban treguas de paz, se intercambian productos y comerciaban",
+          "cachipum":"piedra",
+          "medal":1,
+          "imageId":"1-9UVX6nOSDaOmreRavLq4T7EdV9ClJOX"
+       },
+       "back":{
+          "question":{
+             "text":"¿Cuál era la real finalidad de reunirse en los parlamentos cercanos a las fronteras?",
+             "answers":[
+                {
+                   "text":"Acordar tratados de paz",
+                   "type":true
+                },
+                {
+                   "text":"Intercambiar productos de todo tipo y realizar actividades comerciales",
+                   "type":false
+                },
+                {
+                   "text":"Reunirse para pelear y espiarse secretamente",
+                   "type":false
+                }
+             ]
+          }
+       }
+    }
+ ]

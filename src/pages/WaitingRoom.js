@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react';
 import { db } from '../firebase/firebase';
 
-const WaitingRoom = ({ history }) => {
+const WaitingRoom = ({ history, match }) => {
 
+    const { numberRoom } = match.params;
     const [timeToWait, setTimeToWait] = useState(150)
-    const [session, setSession] = useState({})
+    const [mySession, setMySession] = useState({})
+    const code = numberRoom.split('-')[0]
+    const gamesNumber = numberRoom.split('-')[1]
 
     useEffect(() => {
         let time = setInterval(() => {
@@ -14,29 +17,36 @@ const WaitingRoom = ({ history }) => {
     }, [])
 
     useEffect(() => {
-        if (timeToWait === 0) history.push('/')
+        if (timeToWait === 0) {
+            history.push('/')
+        }
     }, [timeToWait, history])
 
-    const getRooms = async () => {
-        db.collection('rooms').onSnapshot((querySnapshot) => {
-            const docs = [];
-            querySnapshot.forEach(doc => {
-                docs.push({
-                    ...doc.data(),
-                    id: doc.id
+    useEffect(() => {
+        if (JSON.stringify(mySession) !== '{}') {
+            if (mySession.players.length === 2) {
+                console.log(mySession.players.length)
+                setMySession({})
+            }
+        }
+        /*  JSON.stringify(mySession) !== '{}' && mySession.players.length && history.push(`/v1/cards/${code}`) */
+    }, [mySession])
+
+    useEffect(() => {
+        const getRooms = async () => {
+            db.collection('rooms').onSnapshot((querySnapshot) => {
+                const docs = [];
+                querySnapshot.forEach(doc => {
+                    docs.push({
+                        ...doc.data(),
+                        id: doc.id
+                    })
                 })
+                let currentSession = docs.filter((doc) => doc.players.length > 1)
+                console.log(currentSession)
+                currentSession.length > 0 && setMySession(currentSession[0])
             })
-            let currentSession = docs.filter((doc) => doc.players.length > 1)
-            setSession(currentSession[0])
-        })
-
-    }
-
-    useEffect(() => {
-        console.log(session)
-    }, [session])
-
-    useEffect(() => {
+        }
         getRooms()
     }, [])
 

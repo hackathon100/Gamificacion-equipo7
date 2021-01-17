@@ -31,11 +31,11 @@ const Results = ({history}) => {
                     <p>La ronda 2 comienza en: {timeToWait}</p>
                 </div>
                 <div className="row justify-content-center text-center">
-                    <div class="col-sm-6">
+                    <div className="col-sm-6">
                         <p>Jugador 1</p>
                         <h4>1</h4>
                     </div>
-                    <div class="col-sm-6">
+                    <div className="col-sm-6">
                         <p>Jugador 2</p>
                         <h4>0</h4>
                     </div>

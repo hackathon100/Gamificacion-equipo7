@@ -9,23 +9,23 @@ const HistoryResults = ({history}) => {
                     <h1>Ranking</h1>
                 </div>
                 <div className="row justify-content-center p-4">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div className="dropdown">
+                        <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Intervalo de tiempo
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             {/* eslint-disable-next-line  */}
-                            <a class="dropdown-item" href="#">Semana</a>
+                            <a className="dropdown-item" href="#">Semana</a>
                             {/* eslint-disable-next-line  */}
-                            <a class="dropdown-item" href="#">Mes</a>
+                            <a className="dropdown-item" href="#">Mes</a>
                             {/* eslint-disable-next-line  */}
-                            <a class="dropdown-item" href="#">Año</a>
+                            <a className="dropdown-item" href="#">Año</a>
                         </div>
                     </div>
                 </div>
                 <div className="row justify-content-center p-2">
-                    <table class="table">
-                        <thead class="thead-dark">
+                    <table className="table">
+                        <thead className="thead-dark">
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Nombre</th>
@@ -52,7 +52,7 @@ const HistoryResults = ({history}) => {
                     </table>
                 </div>
                 <div className="row justify-content-center p-4">
-                    <div class="col-sm-6">
+                    <div className="col-sm-6">
                         <Button
                             text=" Volver"
                             onClick={() => history.push('/')}

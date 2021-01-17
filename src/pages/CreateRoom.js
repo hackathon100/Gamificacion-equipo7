@@ -7,7 +7,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 const CreateRoom = ({ match, history }) => {
 
     const { store } = useContext(Context);
-    const { numberRoom } = match.params;
+    const { gamesNumber } = match.params;
     const [codeRoom, setCodeRoom] = useState('');
     const [date, setDate] = useState('');
     const [currentRoom, setCurrentRoom] = useState({});
@@ -21,7 +21,7 @@ const CreateRoom = ({ match, history }) => {
 
     const postRoom = async (e) => {
         await db.collection('rooms').doc().set(currentRoom)
-        history.push(`/v1/waitingroom/${numberRoom}`)
+        history.push(`/v1/waitingroom/${codeRoom}-${gamesNumber}`)
     }
 
     useEffect(() => {
@@ -29,12 +29,13 @@ const CreateRoom = ({ match, history }) => {
             players: [
                 store.currentUser
             ],
+            games: gamesNumber,
             date: date,
             code: codeRoom,
             isActive: true
         })
         setCopy(v => ({ ...v, value: codeRoom}))
-    }, [date, codeRoom, store])
+    }, [date, codeRoom, store, gamesNumber])
 
     useEffect(() => {
         const setCurrentDate = () => {
@@ -63,7 +64,7 @@ const CreateRoom = ({ match, history }) => {
         <>
             <div className="container">
                 <div className="row justify-content-center p-4">
-                    <h1>Crear sala de {numberRoom} partidas</h1>
+                    <h1>Crear sala de {gamesNumber} partidas</h1>
                 </div>
                 <div className="row justify-content-center p-2">
                     <p>¡Comparte el siguiente código para jugar!</p>
@@ -88,13 +89,9 @@ const CreateRoom = ({ match, history }) => {
                         onClick={postRoom}
                     />
                 </div>
-
-
-
-
             </div>
         </>
     )
 }
 
-export default CreateRoom
+export default CreateRoom;

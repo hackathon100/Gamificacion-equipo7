@@ -1,6 +1,6 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import 'firebase/firestore';
-import 'firebase/app';
+import 'firebase/auth';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyBAaDyyJyX85fwYwq-H-U08VLdG3gwdZUk",
@@ -26,12 +26,10 @@ export const signOutWithGoogle = () => {
   auth.signOut();
 };
 
-export const successGoogle = (login, logout, setUser) => {
+export const successGoogle = (login, setUser) => {
   auth.onAuthStateChanged((user) => {
     const checkUser = !!user
     setUser(checkUser)
     if (checkUser) login(user)
-    else logout()
   })
-
 }
