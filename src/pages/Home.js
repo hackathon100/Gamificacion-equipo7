@@ -15,14 +15,11 @@ const Home = ({ history }) => {
     const { store } = useContext(Context)
 
 
-/*     const upload = () => {
-
+  /*   const upload = () => {
         cards.forEach(async (card) => {
             await db.collection('cards').doc().set(card)
         })
     } */
-
-
 
     return (
         <>
@@ -64,6 +61,7 @@ const Home = ({ history }) => {
 
             <Modal id="homeModal">
                 <div className="row justify-content-around text-center">
+                    <HomeModalButton text="1" />
                     <HomeModalButton text="3" />
                     <HomeModalButton text="5" />
                     <HomeModalButton text="7" />

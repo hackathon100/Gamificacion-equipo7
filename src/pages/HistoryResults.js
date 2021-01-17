@@ -1,7 +1,32 @@
 import React from 'react'
 import Button from '../components/buttons/button/Button';
+import { useEffect, useState } from 'react';
+import { db } from '../firebase/firebase';
 
 const HistoryResults = ({history}) => {
+
+    const [listUsers, setListUsers] = useState([]);
+
+    useEffect(() => {
+        console.log(listUsers)
+    }, [listUsers])
+
+    useEffect(() => {
+        const getUsers = async () => {
+            db.collection('users').onSnapshot((querySnapshot) => {
+                const users = [];
+                querySnapshot.forEach(user => {
+                    users.push({
+                        ...user.data(),
+                        id: user.id
+                    })
+                })
+                setListUsers(users)
+            })
+        }
+        getUsers()
+    }, [])
+
     return (
         <div>
             <div className="container">
@@ -10,9 +35,6 @@ const HistoryResults = ({history}) => {
                 </div>
                 <div className="row justify-content-center p-4">
                     <div className="dropdown">
-                        <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Intervalo de tiempo
-                        </button>
                         <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             {/* eslint-disable-next-line  */}
                             <a className="dropdown-item" href="#">Semana</a>

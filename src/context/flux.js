@@ -2,19 +2,19 @@ const getState = ({ getStore, getActions, setStore }) => {
     return {
         store: {
             currentUser: {
-                name: 'sacm1046',
+                /* name: 'sacm1046',
                 email: 'sacm1046@gmail.com',
-                scores: 0
+                scores: 0 */
             }
         },
         actions: {
-            login: user => {
+            login: (user) => {
                 const { displayName, email } = user;
                 setStore({
                     currentUser: {
                         email: email,
                         name: displayName,
-                        score: 0
+                        scores: 0
                     }
                 })
             },

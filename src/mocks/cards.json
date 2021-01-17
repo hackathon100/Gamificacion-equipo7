@@ -3,7 +3,11 @@
        "front":{
           "title":"Malón",
           "text":"Eran ataques realizados por los mapuches a los españoles con la finalidad de robar caballos, mujeres, armas y alimentos",
-          "cachipum":"piedra",
+          "cachipum": { 
+            "type": "Piedra",
+            "id": 1,
+            "img": "1weLaeKb9d8dzKUIJ8o7CGdRYqovq0LLZ"
+          },
           "medal":1,
           "imageId":"1NwT0bq2eGItYLMZ8T7LD3N2eA-LItOEE"
        },
@@ -31,7 +35,11 @@
        "front":{
           "title":"Encomienda",
           "text":"Sistema de trabajo indigena, donde un español obtenia un grupo de indigenas para realizar trabajos, el español a cambio les daba comida, ropa y techo",
-          "cachipum":"papel",
+          "cachipum": { 
+            "type": "Papel",
+            "id": 2,
+            "img": "1gyolkdqyZDZ2LdFXBppZWnUaKTuDU050"
+          },
           "medal":2,
           "imageId":"18WU5KqCf6nHAZmsmevy1qskm3RxHxJCC"
        },
@@ -59,7 +67,11 @@
        "front":{
           "title":"Mestizaje",
           "text":"Proceso mediante el cual españoles, indigenas y negros se mezclaron, dando origen a nuevos grupos raciales (mestizos, zambos y mulatos)",
-          "cachipum":"tijera",
+          "cachipum": { 
+            "type": "Tijera",
+            "id": 3,
+            "img": "1NvdS-kZQJi3YeNobSGNuepZd59d8PCKC"
+          },
           "medal":3,
           "imageId":"1ewOVypw29MFRbR2Ec_b1isl5GeMfVZLx"
        },
@@ -87,7 +99,11 @@
        "front":{
           "title":"Peones",
           "text":"Eran trabajadores de las haciendas coloniales, trabajaban por temporadas y de manera esporádica (generalmente en distintos campos)",
-          "cachipum":"piedra",
+          "cachipum": { 
+            "type": "Piedra",
+            "id": 1,
+            "img": "1weLaeKb9d8dzKUIJ8o7CGdRYqovq0LLZ"
+          },
           "medal":1,
           "imageId":"1Oy4FlR0V5CULrAtfjQEXnj26U8VIyU_G"
        },
@@ -115,7 +131,11 @@
        "front":{
           "title":"Monopolio Comercial",
           "text":"Sistema económico implementado por España en América, con la finalidad de evitar la fuga de oro y asi financiar su guerra con Inglaterra",
-          "cachipum":"papel",
+          "cachipum": { 
+            "type": "Papel",
+            "id": 2,
+            "img": "1gyolkdqyZDZ2LdFXBppZWnUaKTuDU050"
+          },
           "medal":2,
           "imageId":"1LeTTD_HP1u1dgOUzcqusRgWAJv40A6ub"
        },
@@ -143,7 +163,11 @@
        "front":{
           "title":"Guerra de Arauco",
           "text":"Conflicto entre españoles y mapuches que inicia tras el desastre de curalaba, se extendió aproximadamente por 300 años y se divide en varias etapas como la guerra defensiva, ofensiva y parlamentos",
-          "cachipum":"tijera",
+          "cachipum": { 
+            "type": "Tijera",
+            "id": 3,
+            "img": "1NvdS-kZQJi3YeNobSGNuepZd59d8PCKC"
+          },
           "medal":3,
           "imageId":"1LfSgeQ1QhNWPasj5nWlsVZQ8bNs4RfGn"
        },
@@ -171,7 +195,11 @@
        "front":{
           "title":"Inquilinos",
           "text":"Eran trabajadores de las haciendas durante la colonia, a diferencia de los peones vivian en el campo donde trabajaban junto a sus familias, estaban a cargo de dirigir el trabajo en el campo, mandaban a los peones y podian cultivar un pequeño trozo de terreno para si mismos",
-          "cachipum":"piedra",
+          "cachipum": { 
+            "type": "Piedra",
+            "id": 1,
+            "img": "1weLaeKb9d8dzKUIJ8o7CGdRYqovq0LLZ"
+          },
           "medal":1,
           "imageId":"1011UKvZQBT-JrtX0RTFXI7a6n3M_TqIk"
        },
@@ -199,7 +227,11 @@
        "front":{
           "title":"Chinganas",
           "text":"Correspondian a lugares de esparcimiento (como las ramadas), donde se bebia, se bailaba y generalmente ocurrian peleas. Se ubicaban en las afueras de la ciudad para evitar la fiscalización de las tropas españolas",
-          "cachipum":"papel",
+          "cachipum": { 
+            "type": "Papel",
+            "id": 2,
+            "img": "1gyolkdqyZDZ2LdFXBppZWnUaKTuDU050"
+          },
           "medal":2,
           "imageId":"1i3FtRXplURaP6I1l7nbJEIKKqiAnzdEQ"
        },
@@ -227,7 +259,11 @@
        "front":{
           "title":"Tertulias",
           "text":"Se les donimina asi a las fiestas realizadas por familias de la clase alta, en donde los hombres hablaban de política y negocio, los padres de familia aprovechaban estas reuniones para buscarle marido a sus hijas y presentarlar en sociedad, tambien se bailaba, ingerian finas bebidas y jugaban a la escondida (lo más esperado de la jornada)",
-          "cachipum":"tijera",
+          "cachipum": { 
+            "type": "Tijera",
+            "id": 3,
+            "img": "1NvdS-kZQJi3YeNobSGNuepZd59d8PCKC"
+          },
           "medal":3,
           "imageId":"1UXVKnBKRwxFy9YZ62Dlt35_4CRG5zaWG"
        },
@@ -255,7 +291,11 @@
        "front":{
           "title":"Hacienda colonial",
           "text":"Era un terreno autosuficiente compuesto por varias hectareas (campo), dedicado a la producción agropecuaria durante la época colonial. En ella trabajaban los inquilinos y los peones. Este lugar contaba con establos, herreria, una gran casa patronal con patios y jardines, incluso tenían una capilla",
-          "cachipum":"piedra",
+          "cachipum": { 
+            "type": "Piedra",
+            "id": 1,
+            "img": "1weLaeKb9d8dzKUIJ8o7CGdRYqovq0LLZ"
+          },
           "medal":1,
           "imageId":"12DTNr9Okaw2GayY71QaSm6GQGOyia1Yp"
        },
@@ -283,7 +323,11 @@
        "front":{
           "title":"Plano damero",
           "text":"Forma de construcción de asentamientos utilizado por los españoles, era similar a un tablero de ajedrez, partia desde la plaza de armas, alrededor se encontraba la iglesia, los edificios de gobierno y las casas de los ciudadanos mas ilustres",
-          "cachipum":"papel",
+          "cachipum": { 
+            "type": "Papel",
+            "id": 2,
+            "img": "1gyolkdqyZDZ2LdFXBppZWnUaKTuDU050"
+          },
           "medal":2,
           "imageId":"1JmoXEc6JiIllWsp8O40hmxanY1orpR3G"
        },
@@ -311,7 +355,11 @@
        "front":{
           "title":"Misiones",
           "text":"Eran intervenciones de los misioneros (principalmente jesuitas) en territorio indigena, con la finalidad de vivir con ellos, aprender su cultura y forma de vida, para luego evangelizarlos",
-          "cachipum":"tijera",
+          "cachipum": { 
+            "type": "Tijera",
+            "id": 3,
+            "img": "1NvdS-kZQJi3YeNobSGNuepZd59d8PCKC"
+          },
           "medal":3,
           "imageId":"1qQSCSnlEUeePclJ85nAM7fsmvx6CaLQk"
        },
@@ -339,7 +387,11 @@
        "front":{
           "title":"Órdenes religiosas",
           "text":"Eran monjes y monjas, sacerdotes, etc. Encargados de la evangelizacion y de la educación en las colonias americanas. Una de las mas importantes en nuestro país fue la orden de los jesuitas",
-          "cachipum":"piedra",
+          "cachipum": { 
+            "type": "Piedra",
+            "id": 1,
+            "img": "1weLaeKb9d8dzKUIJ8o7CGdRYqovq0LLZ"
+          },
           "medal":1,
           "imageId":"16dA0R2y19GpbV4s1bGmOJrswxwC_9Bkw"
        },
@@ -367,7 +419,11 @@
        "front":{
           "title":"La colonia",
           "text":"Es el nombre que recibe el periodo de nuestra historia que comprende los hechos ocurridos desde el Desastre de Curalba 1598 hasta la 1810",
-          "cachipum":"papel",
+          "cachipum": { 
+            "type": "Papel",
+            "id": 2,
+            "img": "1gyolkdqyZDZ2LdFXBppZWnUaKTuDU050"
+          },
           "medal":2,
           "imageId":"1j4VcJ4Dy6r0eQAgWmMXt4MEgMYyJru29"
        },
@@ -395,7 +451,11 @@
        "front":{
           "title":"Desastre de Curalaba",
           "text":"Esta fue una importante derrota para el ejercito español a manos de los mapuches en 1598, marcando además el inicio de la Guerra de Arauco. Producto de esta derrota se estableció como limite de las conquistas españolas el río Biobio",
-          "cachipum":"tijera",
+          "cachipum": { 
+            "type": "Tijera",
+            "id": 3,
+            "img": "1NvdS-kZQJi3YeNobSGNuepZd59d8PCKC"
+          },
           "medal":3,
           "imageId":"1oFNLaG_dvgZKac4ggN1YMtcg4ErULfqQ"
        },
@@ -423,7 +483,11 @@
        "front":{
           "title":"Vida de frontera",
           "text":"Durante la Guerra de Arauco, españoles y mapuches se reuniona en parlamentos (cercanos a las fronteras de ambos territorios) donde se acordaban treguas de paz, se intercambian productos y comerciaban",
-          "cachipum":"piedra",
+          "cachipum": { 
+            "type": "Piedra",
+            "id": 1,
+            "img": "1weLaeKb9d8dzKUIJ8o7CGdRYqovq0LLZ"
+          },
           "medal":1,
           "imageId":"1-9UVX6nOSDaOmreRavLq4T7EdV9ClJOX"
        },

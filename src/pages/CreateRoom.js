@@ -12,12 +12,10 @@ const CreateRoom = ({ match, history }) => {
     const [date, setDate] = useState('');
     const [currentRoom, setCurrentRoom] = useState({});
 
-
     const [copy, setCopy] = useState({
         value: '',
         copied: false
     })
-
 
     const postRoom = async (e) => {
         await db.collection('rooms').doc().set(currentRoom)

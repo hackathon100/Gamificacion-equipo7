@@ -14,6 +14,7 @@ import Question from '../pages/Question';
 import injectContext, { Context } from '../context/appContext';
 import { signInWithGoogle, signOutWithGoogle, successGoogle } from '../firebase/firebase';
 import { useContext, useEffect, useState } from 'react';
+import GoogleButton from '../components/buttons/googleButton/GoogleButton';
 
 const Routes = () => {
 
@@ -54,25 +55,32 @@ const Routes = () => {
                         <Footer />
                     </>
                 ) : (
+                        <main id="cloud__container">
+                            <Switch>
+                                <Route exact path="/" component={() => {
+                                    return (
+                                        <div className="container">
+                                            <div className="row justify-content-center">
+                                                <h3>Ingreso</h3>
+                                            </div>
+                                            <div className="row justify-content-center">
 
-                        <Switch>
-                            <Route exact path="/" component={() => {
-                                return (
-                                    <div className="container">
-                                        <div className="row justify-content-center">
-                                            <h3 style={{ textAlign: "center", marginTop: "50px" }}>Ingreso</h3>
+                                                <GoogleButton
+                                                    onClick={signInWithGoogle}
+                                                    text="Ingresa con Google"
+                                                />
+{/* 
+                                                <button onClick={signInWithGoogle} className="btn btn-danger">
+                                                    sign in google
+                                    </button> */}
+                                            </div>
                                         </div>
-                                        <div className="row justify-content-center">
-                                            <button onClick={signInWithGoogle} className="btn btn-danger">
-                                                sign in google
-                                    </button>
-                                        </div>
-                                    </div>
-                                )
-                            }} />
+                                    )
+                                }} />
 
-                            <Route component={NotFound} />
-                        </Switch>
+                                <Route component={NotFound} />
+                            </Switch>
+                        </main>
 
                     )
             }

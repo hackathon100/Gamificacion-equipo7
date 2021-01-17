@@ -1,4 +1,8 @@
+
+
 const Form = ({ onSubmit = () => console.log('Submiting...'), children, title = 'Formulario' }) => {
+
+ 
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -10,6 +14,7 @@ const Form = ({ onSubmit = () => console.log('Submiting...'), children, title = 
             <h5 className="m-0">{title}</h5>
             <hr/>
             {children} 
+            
 
             <button className="btn btn-danger btn-block" type="submit">Enviar</button>
         </form>

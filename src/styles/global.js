@@ -215,4 +215,20 @@ export default createGlobalStyle`
         font-size: 1.2em;
     }
 
+    #cloud__container {
+        background-image: url('https://drive.google.com/uc?id=18iZj3fhxsJRzMJRdUfq4bPx626wiCztC');
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: green;
+        & h3 {
+            font-size: 50px;
+            font-family: 'Lucida Sans', Verdana;
+            font-weight: 900; 
+        }
+    }
 `

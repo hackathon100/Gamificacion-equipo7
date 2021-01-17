@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 const Results = ({history}) => {
 
-    const [timeToWait, setTimeToWait] = useState(5)
+    const [timeToWait, setTimeToWait] = useState(10)
 
     useEffect(() => {
         let time = setInterval(() => {

@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useContext } from 'react';
 import FrontCard from '../components/card/FrontCard';
 import Button from '../components/buttons/button/Button';
 import { useEffect, useState } from 'react';
 import { db } from '../firebase/firebase';
+import { Context } from '../context/appContext';
 
-const Cards = () => {
+const Cards = ({ match }) => {
 
+    const { store } = useContext(Context);
     const [filteredCards, setFilteredCards] = useState([]);
     const [listCards, setListCards] = useState([]);
-    const gamesNumber = 3;
+    const [mySession, setMySession] = useState({});
+    const [player, setPlayer] = useState(null);
+    const { gamesNumber } = match.params;
+    const code = gamesNumber.split('-')[0];
+    const games = gamesNumber.split('-')[1];
+
+
+
+    useEffect(() => {
+        if (JSON.stringify(mySession) !== '{}') {
+            const checkPlayer = () => {
+                const email = store.currentUser.email;
+                let currentPlayer = mySession.players.findIndex((player) => player.email === email);
+                setPlayer(currentPlayer+1);
+            }
+            checkPlayer()
+        }
+    }, [mySession, store.currentUser.email])
 
     useEffect(() => {
         if (listCards.length > 0) {
@@ -17,20 +36,20 @@ const Cards = () => {
             }
             const generateCardList = () => {
                 let cardList = []
-                for (let x = 0; x < gamesNumber; x++) {
+                for (let x = 0; x < games; x++) {
                     let index = generateRandomNumber()
                     if (cardList.filter(item => item.id === listCards[index].id).length === 0) {
                         cardList.push(listCards[index])
-                    } else{
-                    index = generateRandomNumber()
-                    cardList.push(listCards[index]) 
-                } 
+                    } else {
+                        index = generateRandomNumber()
+                        cardList.push(listCards[index])
+                    }
                 }
                 setFilteredCards(cardList)
             }
             generateCardList()
         }
-    }, [listCards])
+    }, [listCards, games])
 
 
     useEffect(() => {
@@ -53,12 +72,39 @@ const Cards = () => {
         getCards()
     }, [])
 
+    useEffect(() => {
+        const getRooms = async () => {
+            db.collection('rooms').onSnapshot((querySnapshot) => {
+                const docs = [];
+                querySnapshot.forEach(doc => {
+                    docs.push({
+                        ...doc.data(),
+                        id: doc.id
+                    })
+                })
+
+                let currentSession = docs.filter((doc) => doc.code === code)
+                console.log(currentSession[0])
+                setMySession(currentSession[0])
+            })
+        }
+        if (code) {
+            getRooms()
+        }
+    }, [code])
 
     return (
         <div className="container">
             <div className="row justify-content-center">
                 <h1>Selecciona una carta</h1>
+
+                {/*   <button onClick={checkPlayer}>asd</button> */}
             </div>
+            {
+                player && <h1 className="text-center font-weight">Jugador {player}</h1>
+
+            }
+
             <div className="row justify-content-center text-center">
                 {
                     filteredCards.map(card => {
@@ -67,8 +113,8 @@ const Cards = () => {
                                 <FrontCard
                                     title={card.front.title}
                                     idImg={card.front.imageId}
-                                    imgType="1NvdS-kZQJi3YeNobSGNuepZd59d8PCKC"
-                                    type={card.front.cachipum}
+                                    imgType={card.front.cachipum.img}
+                                    type={card.front.cachipum.type}
                                     medal={card.front.medal}
                                     body={card.front.text}
                                 />

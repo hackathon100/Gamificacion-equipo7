@@ -24,13 +24,13 @@ const WaitingRoom = ({ history, match }) => {
 
     useEffect(() => {
         if (JSON.stringify(mySession) !== '{}') {
-            if (mySession.players.length === 2) {
-                console.log(mySession.players.length)
+            if (mySession.players.length > 1 ) {
                 setMySession({})
+                history.push(`/v1/cards/${code}-${gamesNumber}`)
             }
         }
-        /*  JSON.stringify(mySession) !== '{}' && mySession.players.length && history.push(`/v1/cards/${code}`) */
-    }, [mySession])
+         /* JSON.stringify(mySession) !== '{}' && mySession.players.length > 1  && history.push(`/v1/cards/${code}`) */
+    }, [mySession, history, code, gamesNumber])
 
     useEffect(() => {
         const getRooms = async () => {
@@ -42,13 +42,13 @@ const WaitingRoom = ({ history, match }) => {
                         id: doc.id
                     })
                 })
-                let currentSession = docs.filter((doc) => doc.players.length > 1)
+                let currentSession = docs.filter((doc) => doc.code === code)
                 console.log(currentSession)
                 currentSession.length > 0 && setMySession(currentSession[0])
             })
         }
         getRooms()
-    }, [])
+    }, [code])
 
     return (
         <>
